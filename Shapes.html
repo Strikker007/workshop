@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+            <style>
+           
+            </style>
+            
+  </head>
+  <body style="background-color: black;">
+          <h1 style="color: white;margin-top: 50px;margin-left: 500px;">Shape Changer</h1>
+    <div style="height: 300px;width: 500px;background-color: gray;margin-left: 350px;">
+      <div style="height: 10px;width: 500px;">
+      </div>
+      <div style="height: 200px;width:500px;">
+          <div id ="shape" style="height: 200px;width:200px;background-color: blue;margin-left: 150px;"></div>
+      </div> 
+      <div style="height: 90px;width: 500px;">
+        <br>
+             <button style="margin-left: 50px;height: 50px;width: 100px;background-color: brown;color: pink;border-radius: 20%;" onclick="rectangle()">Rectangle</button>
+             <button style="margin-left: 50px;height: 50px;width: 100px;background-color: brown;color: pink;border-radius: 20%;" onclick="square()">Square</button>
+             <button style="margin-left: 50px;height: 50px;width: 100px;background-color: brown;color: pink;border-radius: 20%;" onclick="circle()">Circle</button>
+      </div>
+    </div>
+      </body>
+      <script>
+          function rectangle()
+          {
+            document.getElementById('shape').style['height']='100px'; 
+            document.getElementById('shape').style['width']='200px';
+            document.getElementById('shape').style['background-color']='red';
+            document.getElementById('shape').style['border-radius']='0%';
+          }
+          function square()
+          {
+            document.getElementById('shape').style['height']='200px';
+            document.getElementById('shape').style['width']='200px';
+            document.getElementById('shape').style['background-color']='yellow';
+            document.getElementById('shape').style['border-radius']='0%';
+          }
+          function circle()
+          {
+            document.getElementById('shape').style['height']='200px';
+            document.getElementById('shape').style['width']='200px';
+            document.getElementById('shape').style['border-radius']='50%';
+            document.getElementById('shape').style['background-color']='green';
+          }
+      </script>
+</html>          
